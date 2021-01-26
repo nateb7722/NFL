@@ -1,6 +1,6 @@
 # NFL
 
-This purpose of this project is to use play by play data from the nflfastR package and to predict winners of NFL games, scores of NFL games, and the total points scored. If accurate, these predictions could recommend wagers moneyline, spread, and over-under. Currently, this is all a work in progress and the models file is currently only for predicting the winner. The project is split in to multiple files: Read_In, Gather_and_Clean, Output_Chart_Data, Upcoming Week Schedule and Models. 
+This purpose of this project is to use play by play data from the nflfastR package to predict winners, scores, and total points scored for NFL games. If accurate, these predictions could recommend moneyline, spread, and over-under wagers. Currently,  the models file is still a work in progress and  is currently only for predicting the winner. The project is split in to multiple files: Read_In, Gather_and_Clean, Output_Chart_Data, Upcoming Week Schedule and Models. 
 
 Upcoming Week Schedule;
 - This is an excel file where you should enter the information for upcoming games. By doing so and setting Add_new_week_sched to "Yes", we can feed the season averages to the models and gather predictions for those games
@@ -22,3 +22,8 @@ Gather and Clean:
         - df should be play by play data
         - Add_new_week_sched is for prep_game_df_for_avgs()
         - include_upcoming_week is for get_season_avgs_by_game()
+        
+Output Chart Data
+ - This file is used to output statistics for charts
+    - change file paths and use to Update_season_charts(year) to update file
+    - Vizualizations can be seen here: https://public.tableau.com/profile/nate.balson#!/
